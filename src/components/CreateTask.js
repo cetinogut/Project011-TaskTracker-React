@@ -3,16 +3,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { addMonths } from "date-fns";
 
-
-
 import { useState } from 'react'
 import { setInput } from  '../helpers/InputHelpers';
 import { BsInfoCircleFill } from "react-icons/bs"
 
 import Tooltip from "./tooltip/Tooltip";
-//import Datepicker from "./datepicker/Datepicker";
-
-
 
 export default function CreateTask({onCreate}) {
     const [text, setText] = useState("");
@@ -32,9 +27,9 @@ export default function CreateTask({onCreate}) {
             alert("please fill both fields")
         } else{
             if(!category){
-                category = "Genel"
+                category = "Generic"
             } 
-            //category ? category : "Genel";
+            //category ? category : "Generic";
             onCreate({text, endDate, category, isDone:false});
             setText("");
             setCategory("");
@@ -61,7 +56,7 @@ export default function CreateTask({onCreate}) {
         </div>
         <div className="form-control">
           <label htmlFor="category">Task Category  
-            <Tooltip content="Default will be 'Genel'!" direction="right">
+            <Tooltip content="Default will be 'Generic'!" direction="right">
                 <BsInfoCircleFill style = {{ color: "white", cursor:"pointer"}}/>
             </Tooltip>
           </label>
@@ -108,8 +103,6 @@ export default function CreateTask({onCreate}) {
             maxDate={addMonths(new Date(), 2)} //For all the functions used in props, you import them from 'date-fns'.
             showDisabledMonthNavigation
             calendarStartDay={1}
-
-            
           />
         </div>
         <input type="submit" value="Save Task" className="btn btn-block" />
