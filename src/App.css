@@ -70,12 +70,11 @@ body {
   cursor: pointer;
 }
 
-.task-first-line{
-  /* padding : 10px 20px; */
+.task-line{
   width: 100%;
   display : flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;  
 }
 .edit-buttons{
   width: 20%;
@@ -83,7 +82,20 @@ body {
   align-items: center;
   justify-content:space-between;
 }
+.icons{
+  cursor:pointer;
+  padding-top: 2px;
+}
+.icon-red{
+  color: red;
+}
+.icon-green{
+  color: green;
+}
 
+span{
+  margin-left: 10px;
+}
 .task.done {
   border-left: 5px solid rgb(102, 18, 77);
 }
