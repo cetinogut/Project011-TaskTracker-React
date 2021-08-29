@@ -3,7 +3,7 @@
 
 # Project-011 : Task Tracker(REACT)
 
-## How to Publish to GitHub Pages (gh-pages)
+## How to Publish Simple React App to GitHub Pages (gh-pages)
   1. During  the project development do the routine github repo pushs. Finalize the project in your localhost.
   2. Ready to publish in gh-pages? If so;
       - Add this statement: ( "homepage": "https://cetinogut.github.io/Project011-TaskTrackerV1-React",) (exclude paranthesis) at the beginnig of your package.json as the first line. This will come right after the opening curly braces of the package.json, just before the 'name' key.
