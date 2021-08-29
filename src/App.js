@@ -18,7 +18,7 @@ const onCreate = (task) => {
   console.log(`newTask`, newTask)
   setTasks((prevState) =>[...prevState, newTask]) // prevState can be called whatever we like
 }
-// edit task
+// edit task .. this a TODO.. currently the code below toggles the isCompleted..
 const onEdit = (id) => 
   setTasks(
     tasks.map((task) => 

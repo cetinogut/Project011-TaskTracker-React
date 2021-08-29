@@ -18,7 +18,9 @@ export const Task = ({task, onDelete, onEdit, toggleDone}) => {
                 <div className="edit-buttons">
                   <Tooltip content="click for deleting" direction="top">
                     <BsFillTrashFill className="icons icon-red" 
-                    onClick={() =>onDelete(task.id)}/>
+                    // onClick={() =>onDelete(task.id)}
+                    onClick={() => { if (window.confirm(`Are you sure you wish to delete : ${task.text} task?`)) onDelete(task.id) } }
+                    />
                   </Tooltip>
                   <Tooltip content="click for editing(TODO)" direction="top">
                     <BsPencil className="icons icon-green"
