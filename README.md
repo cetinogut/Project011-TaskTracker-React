@@ -6,12 +6,12 @@
 ## How to Publish to GitHub Pages (gh-pages)
   1. During  the project development do the routine github repo pushs. Finalize the project in your localhost.
   2. Ready to publish in gh-pages? If so;
-      - Add this statement: "homepage": "https://cetinogut.github.io/Project011-TaskTrackerV1-React", at the beginnig of your package.json. This will come right after the opening curly braces of the package.json, just before the 'name' key.
+      - Add this statement: ( "homepage": "https://cetinogut.github.io/Project011-TaskTrackerV1-React",) (exclude paranthesis) at the beginnig of your package.json as the first line. This will come right after the opening curly braces of the package.json, just before the 'name' key.
       - Replace cetinogut with your own github profile name.
-      - Replace Project011.... with your own project repo name. This part is important if you update the name of your repo in the futurei you have to update it here as well.
+      - Replace Project011.... with your own project repo name. This part is important if you update the name of your repo in the future, you have to update it here as well.
       - Add this statement :
-          "predeploy": "npm run build",
-          "deploy": "gh-pages -d build"
+          ( "predeploy": "npm run build",
+            "deploy": "gh-pages -d build" ) (exclude paranthesis)
         as the last lines in your "scripts" section of the package.json. 
       - Now we are ready to publish to github. In your terminal (VS Code terminal in your project folder) run : "npm run deploy" command.. This will create a build folder in your project folder. Now you can check your published react app att URL that you added to the first line of package.json, (for me): https://cetinogut.github.io/Project011-TaskTrackerV1-React
   3. When ever you make an updat in your project, after you run the project in your localhost, then update the project repo in github and finally run "npm run deploy" script fro myour terminal. In this way, you will publish an updated verison of your project to gh-pages. 
