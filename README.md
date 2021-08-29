@@ -1,7 +1,7 @@
 <p>Clarusway<img align="right"
   src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
-# Project-006 : Task Tracker (RC-06)
+# Project-011 : Task Tracker(REACT)
 
 ## Description
 
@@ -43,7 +43,7 @@ SOLUTION
 
 ## Expected Outcome
 
-![task_tracker_expected](https://user-images.githubusercontent.com/67653402/130800882-2bd72486-cfb2-40eb-82c0-719c48971d22.gif)
+![task_tracker_expected](https://github.com/cetinogut/ProjectScreenCaptureGifs/blob/f19464872285d6c1a78d50d4c98753212ecd93d1/React-TaskTrackerV1.gif)
 
 ## Objective
 
